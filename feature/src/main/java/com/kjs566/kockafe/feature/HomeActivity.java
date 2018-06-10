@@ -1,13 +1,15 @@
 package com.kjs566.kockafe.feature;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class HomeActivity extends AppCompatActivity {
+import com.kjs566.kockafe.base.BaseActivity;
+
+public class HomeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        inflateContent(R.layout.activity_home_content);
+        setTitle(R.string.home_title);
     }
 }
