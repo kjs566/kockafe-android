@@ -1,9 +1,13 @@
 <resources>
+    <!-- HomeActivity menu items-->
     <string name="home_title">Cat Coffee Frey</string>
-    <string name="about">About us</string>
+    <string name="about_title">About us</string>
     <string name="our_fluffy_friends">Our fluffy friends</string>
     <string name="contact">Contact</string>
     <string name="game_find_cat">Game - Find cat</string>
     <string name="game_snake">Game - Snake</string>
     <string name="share_photo">Share Photo</string>
+
+    <!-- AboutActivity -->
+    <string name="about_text">We are the first cat café in Prague – in business since October 2014. You can meet seven cats of various ages, sizes, and personalities in our café – namely Stella, Minnie, Oliver, Muffin, Marie Terezie, Noxík and Bořek. Our cats come mostly from animal shelters and they love company of our guests. So whether you are planning on having a cup of coffee with a piece of cake, homemade lemonades, or a glass of wine, whether you are planning on reading your favourite book or just enjoying the atmosphere you are most likely to end up with a ball of fur in your lap. You are going to fall for our cats. Come and see! We are looking forward to your visit!</string>
 </resources>

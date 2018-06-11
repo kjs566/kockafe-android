@@ -16,4 +16,10 @@
         <item name="android:paddingBottom">0dp</item>
     </style>
 
+    <style name="StyledText">
+        <item name="android:fontFamily">@font/amatic_font</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
 </resources>
