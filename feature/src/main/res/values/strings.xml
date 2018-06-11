@@ -1,6 +1,6 @@
 <resources>
     <!-- HomeActivity menu items-->
-    <string name="home_title">Cat Coffee Frey</string>
+    <string name="home_title">Cat Coffee Freya</string>
     <string name="about_title">About us</string>
     <string name="our_fluffy_friends">Our fluffy friends</string>
     <string name="contact">Contact</string>

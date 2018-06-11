@@ -5,4 +5,11 @@
     <color name="colorPrimary">#7B1413</color>
     <color name="colorPrimaryDark">#7B1413</color>
     <color name="colorAccent">@color/white</color>
+    <color name="transparent">#00ffffff</color>
+
+    <!-- Menu button text -->
+    <color name="menu_button_default">@color/colorPrimary</color>
+    <color name="menu_button_pressed">#d15452</color>
+    <color name="menu_button_selected">#b13f3d</color>
+    <color name="menu_button_focused">#762322</color>
 </resources>

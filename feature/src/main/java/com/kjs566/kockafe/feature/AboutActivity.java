@@ -10,5 +10,7 @@ public class AboutActivity extends BaseActivity{
         super.onCreate(savedInstanceState);
         inflateContent(R.layout.activity_about_content);
         setTitle(R.string.about_title);
+        showBackButton();
+        setBackgroundImage(R.drawable.about_background);
     }
 }
