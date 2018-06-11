@@ -19,5 +19,8 @@
     <string name="contact_address_label">Address:</string>
     <string name="contact_address_value">Bořivojova 1102/43, 130 00 Praha 3</string>
     <string name="contact_open_map">Open map</string>
+    <string name="send_email">Send email</string>
+    <string name="open_map">Open map</string>
+    <string name="cat_cafe_map_marker">Cat Cafe Freya</string>
 
 </resources>
