@@ -8,13 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="MenuButton" parent="Widget.AppCompat.Button.Borderless">
+    <style name="StyledButton" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:fontFamily">@font/amatic_font</item>
         <item name="android:textSize">36sp</item>
         <item name="android:textColor">@drawable/menu_button_text_color</item>
         <item name="android:paddingTop">0dp</item>
         <item name="android:paddingBottom">0dp</item>
         <item name="android:background">@drawable/menu_button_background</item>
+    </style>
+
+    <style name="StyledButtonSmaller" parent="StyledButton">
+        <item name="android:fontFamily">@font/amatic_font</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
     <style name="BackButton" parent="Widget.AppCompat.Button.Borderless">

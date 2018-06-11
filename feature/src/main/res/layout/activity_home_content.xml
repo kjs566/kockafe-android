@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/btn_about"
-        style="@style/MenuButton"
+        style="@style/StyledButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/about_title"
@@ -20,7 +20,7 @@
 
     <Button
         android:id="@+id/btn_cats"
-        style="@style/MenuButton"
+        style="@style/StyledButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/our_fluffy_friends"
@@ -32,7 +32,7 @@
 
     <Button
         android:id="@+id/btn_contact"
-        style="@style/MenuButton"
+        style="@style/StyledButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/contact"
@@ -44,7 +44,7 @@
 
     <Button
         android:id="@+id/btn_game1"
-        style="@style/MenuButton"
+        style="@style/StyledButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/game_find_cat"
@@ -56,7 +56,7 @@
 
     <Button
         android:id="@+id/btn_game2"
-        style="@style/MenuButton"
+        style="@style/StyledButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/game_snake"
@@ -68,7 +68,7 @@
 
     <Button
         android:id="@+id/btn_share"
-        style="@style/MenuButton"
+        style="@style/StyledButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/share_photo"

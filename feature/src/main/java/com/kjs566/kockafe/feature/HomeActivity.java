@@ -39,7 +39,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         } else if (id == R.id.btn_cats) {
 
         } else if (id == R.id.btn_contact) {
-
+            activityCls = ContactActivity.class;
         } else if (id == R.id.btn_game1) {
 
         } else if (id == R.id.btn_game2) {

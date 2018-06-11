@@ -10,4 +10,14 @@
 
     <!-- AboutActivity -->
     <string name="about_text">We are the first cat café in Prague – in business since October 2014. You can meet seven cats of various ages, sizes, and personalities in our café – namely Stella, Minnie, Oliver, Muffin, Marie Terezie, Noxík and Bořek. Our cats come mostly from animal shelters and they love company of our guests. So whether you are planning on having a cup of coffee with a piece of cake, homemade lemonades, or a glass of wine, whether you are planning on reading your favourite book or just enjoying the atmosphere you are most likely to end up with a ball of fur in your lap. You are going to fall for our cats. Come and see! We are looking forward to your visit!</string>
+
+
+    <!-- ContactActivity -->
+    <string name="contact_make_a_reservation">Make a reservation at +420 222 722 959</string>
+    <string name="contact_email">E-Mail: kockafepraha@gmail.com</string>
+    <string name="contact_open_information">Open: Mo – Su 11:00 – 20:00</string>
+    <string name="contact_address_label">Address:</string>
+    <string name="contact_address_value">Bořivojova 1102/43, 130 00 Praha 3</string>
+    <string name="contact_open_map">Open map</string>
+
 </resources>
