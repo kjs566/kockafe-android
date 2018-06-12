@@ -29,6 +29,7 @@ public class ContactActivity extends BaseActivity implements OnMapReadyCallback,
         setTitle(R.string.contact);
         setBackgroundImage(R.drawable.contact_background);
         inflateContent(R.layout.activity_contact_content);
+        showBackButton();
 
         int[] buttonsIds = {R.id.btn_reservation, R.id.btn_address, R.id.btn_contact, R.id.btn_open_map};
         for (int id : buttonsIds) {
@@ -91,9 +92,8 @@ public class ContactActivity extends BaseActivity implements OnMapReadyCallback,
 
     private void openMap(){
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.fromParts("geo", "0:0?q=50.082779,14.453231(" + getString(R.string.cat_cafe_map_marker) + ")", null));
+        intent.setData(Uri.parse("geo:0,0?q=50.082779,14.453231(" + getString(R.string.cat_cafe_map_marker) + ")"));
         if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
             startActivity(Intent.createChooser(intent, getString(R.string.open_map)));
         }
     }
