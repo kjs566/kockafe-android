@@ -17,6 +17,7 @@ public class CatDetailActivity extends BaseActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         inflateContent(R.layout.activity_cat_detail_content);
+        showBackButton();
 
         String catId = getIntent().getStringExtra(CAT_ID_EXTRA_KEY);
         if(catId == null) {
@@ -25,6 +26,7 @@ public class CatDetailActivity extends BaseActivity implements View.OnClickListe
 
         CatRecord cat = CatsRepository.getInstance().getCatById(catId);
         setTitle(cat.getNameRes());
+        setBackgroundImage(cat.getImagesRes()[0]);
 
         TextView descriptionTextView = findViewById(R.id.tv_cat_description);
         descriptionTextView.setText(cat.getDescriptionRes());
