@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        <activity android:name=".ui.HomeActivity">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -30,7 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AboutActivity">
+        <activity android:name=".ui.AboutActivity">
             <intent-filter android:order="2">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -43,7 +43,8 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContactActivity" />
+        <activity android:name=".ui.ContactActivity" />
+        <activity android:name=".ui.CatsActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

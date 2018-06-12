@@ -22,5 +22,19 @@
     <string name="send_email">Send email</string>
     <string name="open_map">Open map</string>
     <string name="cat_cafe_map_marker">Cat Cafe Freya</string>
+    <string name="cat_name_borek">Bořek</string>
+    <string name="cat_name_stella">Stella</string>
+    <string name="cat_name_minnie">Minnie</string>
+    <string name="cat_name_noxik">Noxík</string>
+    <string name="cat_name_oliver">Oliver</string>
+    <string name="cat_name_muffin">Muffin</string>
+    <string name="cat_name_terinka">Marie Terezie</string>
+    <string name="cat_description_borek" />
+    <string name="cat_description_stella" />
+    <string name="cat_description_minnie" />
+    <string name="cat_description_noxik" />
+    <string name="cat_description_oliver" />
+    <string name="cat_description_muffin" />
+    <string name="cat_description_terinka" />
 
 </resources>
