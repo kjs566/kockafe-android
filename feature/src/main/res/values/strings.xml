@@ -36,5 +36,6 @@
     <string name="cat_description_oliver" />
     <string name="cat_description_muffin" />
     <string name="cat_description_terinka" />
+    <string name="gallery">Gallery</string>
 
 </resources>

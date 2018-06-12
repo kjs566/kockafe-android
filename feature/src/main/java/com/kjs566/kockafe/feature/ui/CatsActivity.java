@@ -1,5 +1,6 @@
 package com.kjs566.kockafe.feature.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
@@ -34,22 +35,34 @@ public class CatsActivity extends BaseActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    private class CatViewHolder extends RecyclerView.ViewHolder{
+    private void goToCatDetail(String catId){
+        Intent intent = new Intent(this, CatDetailActivity.class);
+        intent.putExtra(CatDetailActivity.CAT_ID_EXTRA_KEY, catId);
+        startActivity(intent);
+    }
+
+    private class CatViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private final TextView mCatName;
         private final ImageView mCatImage;
+        private String mCatId;
 
         public CatViewHolder(View itemView) {
             super(itemView);
             mCatName = itemView.findViewById(R.id.tv_name);
             mCatImage = itemView.findViewById(R.id.iv_image);
+            itemView.setOnClickListener(this);
         }
 
-        public void setName(@StringRes int nameRes){
+        public void updateView(String catId, @StringRes int nameRes, @DrawableRes int imageRes){
+            mCatId = catId;
             mCatName.setText(nameRes);
+            mCatImage.setImageDrawable(getResources().getDrawable(imageRes));
+
         }
 
-        public void setImage(@DrawableRes int imageRes){
-            mCatImage.setImageDrawable(getResources().getDrawable(imageRes));
+        @Override
+        public void onClick(View view) {
+            goToCatDetail(mCatId);
         }
     }
 
@@ -63,10 +76,7 @@ public class CatsActivity extends BaseActivity {
         @Override
         public void onBindViewHolder(CatViewHolder holder, int position) {
             final CatRecord cat = mCatsList.get(position);
-            if(cat.getImagesRes().length > 0) {
-                holder.setImage(cat.getImagesRes()[0]);
-            }
-            holder.setName(cat.getNameRes());
+            holder.updateView(cat.getId(), cat.getNameRes(), cat.getImagesRes()[0]);
         }
 
         @Override
