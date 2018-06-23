@@ -1,6 +1,6 @@
 <resources>
     <!-- HomeActivity menu items-->
-    <string name="home_title">Cat Coffee Freya</string>
+    <string name="home_title">Cat Café Freya</string>
     <string name="about_title">About us</string>
     <string name="our_fluffy_friends">Our fluffy friends</string>
     <string name="contact">Contact</string>
@@ -14,28 +14,37 @@
 
     <!-- ContactActivity -->
     <string name="contact_make_a_reservation">Make a reservation at +420 222 722 959</string>
-    <string name="contact_email">E-Mail: kockafepraha@gmail.com</string>
+    <string name="contact_email" translatable="false">E-Mail: kockafepraha@gmail.com</string>
     <string name="contact_open_information">Open: Mo – Su 11:00 – 20:00</string>
     <string name="contact_address_label">Address:</string>
-    <string name="contact_address_value">Bořivojova 1102/43, 130 00 Praha 3</string>
+    <string name="contact_address_value" translatable="false">Bořivojova 1102/43, 130 00 Praha 3</string>
     <string name="contact_open_map">Open map</string>
     <string name="send_email">Send email</string>
     <string name="open_map">Open map</string>
     <string name="cat_cafe_map_marker">Cat Cafe Freya</string>
-    <string name="cat_name_borek">Bořek</string>
-    <string name="cat_name_stella">Stella</string>
-    <string name="cat_name_minnie">Minnie</string>
-    <string name="cat_name_noxik">Noxík</string>
-    <string name="cat_name_oliver">Oliver</string>
-    <string name="cat_name_muffin">Muffin</string>
-    <string name="cat_name_terinka">Marie Terezie</string>
+
+    <!-- CatDetailActivity -->
+    <string name="gallery">Gallery</string>
+
+    <!-- Cats names -->
+    <string name="cat_name_borek" translatable="false">Bořek</string>
+    <string name="cat_name_stella" translatable="false">Stella</string>
+    <string name="cat_name_minnie" translatable="false">Minnie</string>
+    <string name="cat_name_noxik" translatable="false">Noxík</string>
+    <string name="cat_name_oliver" translatable="false">Oliver</string>
+    <string name="cat_name_muffin" translatable="false">Muffin</string>
+    <string name="cat_name_terinka" translatable="false">Marie Terezie</string>
+    <string name="cat_name_grace_kelly" translatable="false">Keliška / Grace Kelly</string>
+    <string name="cat_name_zrzinka" translatable="false">Zrzinka</string>
+
+    <!-- Cats descriptions -->
     <string name="cat_description_borek">I am Bořek. I came on Halloween night as a 2–3 months old kitten. I was running around Bořivojova street so they named me Bořek.\nI am a bit shy, but when I am in mood for a cuddle, I will try all positions to make sure I got scratched everywhere. I do not like people touching my paws and ears.</string>
     <string name="cat_description_stella">I am Stella. I am the oldest cat here. And I am a princess. I love being brushed and posing for photographers. I like the places to sleep that smell nice. Prams, coats, bags.\nMy favourite place to sleep will be your backpack. When I am content, nothing will bother me.</string>
     <string name="cat_description_minnie">I am the second youngest cat here. I came in 2015. I was rescued from a building site where I was living in a hole in the ground. I am quite happy alone, but i like getting my belly scratched. I also love the poaches and I know how to ask for them. I am great at begging for food.\nYou can tell the difference between me nad Nox by less white hair on my chest and different color of my eyes.</string>
     <string name="cat_description_noxik">I am Nox. I am the first adopted cat. I am very cuddly and greedy. I have already had problems with my tummy twice, because I would just eat everything.\nI am very patient  and I am always in good mood. I like getting my paws stroked gently.</string>
     <string name="cat_description_oliver">I am Oliver, I am mixed breed with an Egyptian cat. The difference between me and Muffin si that I have a longer face and almond eye\nI like to play. I do not like when you pick me up, but quite often  I climb to people´s shoulders where I could stay for hours. I also like bags and rucksacks.</string>
     <string name="cat_description_muffin">I am Muffin, they gave me a nickname Forest Gump. But they call me that with love. I am very studious, but it takes me a while to think something up.\nI like just to sit, then I look at you and say something very important. Im very talkative. I was born with one of my legs shorter, but i don´t mind that at all.</string>
-    <string name="cat_description_terinka">I am not fat. Just chubby! And it is ok, because I had kittens twice. The cut on my ear is not an injury. It is a mark from a rescue station taht means, I am neutred. I like to take naps on the sofa and  by the window. I am very cuddly and I can give the best belly massages. I was found and rescued by students of history who gave me the name Marie Terezie.</string>
-    <string name="gallery">Gallery</string>
-
+    <string name="cat_description_terinka">I am not fat. Just chubby! And it is ok, because I had kittens twice. The cut on my ear is not an injury. It is a mark from a rescue station that means, I am neutered. I like to take naps on the sofa and  by the window. I am very cuddly and I can give the best belly massages. I was found and rescued by students of history who gave me the name Marie Terezie.</string>
+    <string name="cat_description_grace_kelly">Nosy and chatty, playful, cheeky tease. But also so cute with her kitten-like face. Originally we thought she was a princess but soon we discovered her true self. Grab any toy and have fun… Just watch your fingers!</string>
+    <string name="cat_description_zrzinka">She was saved from really bad conditions and lost her eye due to a bad infection. She can see partially with the other one. Be patient and approach her slowly if you want to pet her. She is a bit shy, but she likes to be stroked if she feels safe. Zrzinka also likes to play, but choose a toy that she can hear well :)</string>
 </resources>

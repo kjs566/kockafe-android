@@ -1,0 +1,36 @@
+<resources>
+    <!-- HomeActivity menu items-->
+    <string name="home_title">Kočkafé Freya</string>
+    <string name="about_title">O nás</string>
+    <string name="our_fluffy_friends">Naši chlupáči</string>
+    <string name="contact">Kontakt</string>
+    <string name="game_find_cat">Hra – Najděte kočičku</string>
+    <string name="game_snake">Hra – had</string>
+    <string name="share_photo">Sdílet foto</string>
+
+    <!-- AboutActivity -->
+    <string name="about_text">Jsme první kočičí kavárna v Praze, fungující od října 2014. Žije u nás celkem 7 kočiček různých věků, velikostí a charakterů – Bořek, Stella, Minnie, Noxík, Oliver, Muffin a Marie Terezie. Kočičky jsou převážně z útulků a milují společnost a pozornost našich hostů. Ať  už k nám přijdete na kávu a dortík, domácí limonádu nebo na skleničku vína, číst si, hrát si nebo jen tak posedět, skončíte pravděpodobně s chlupáčem na klíně. Můžeme Vám zaručit, že si Vás kočičáci pěkně omotají kolem prstu. Budeme se těšit na Vaší návštěvu.</string>
+
+    <!-- ContactActivity -->
+    <string name="contact_make_a_reservation">Rezervace na telefonu +420 222 722 959</string>
+    <string name="contact_open_information">Otevřeno: Po - Ne 11:00 – 20:00</string>
+    <string name="contact_address_label">Adresa:</string>
+    <string name="contact_open_map">Otevřít mapu</string>
+    <string name="send_email">Odeslat email</string>
+    <string name="open_map">Otevřít mapu</string>
+    <string name="cat_cafe_map_marker">Kočkafé Freya</string>
+
+    <!-- CatDetailActivity -->
+    <string name="gallery">Galerie</string>
+
+    <!-- Cats descriptions -->
+    <string name="cat_description_borek">Přišel jsem na Halloween, když mi byly 2–3  měsíce. Potuloval jsem se v Bořivojově ulici, tak mi dali jméno Bořek.\nJsem trochu plachý, ale když mám náladu se mazlit, vystřídám všechny polohy, abych se ujistil, že jste mě podrbali úplně všude. Nemám moc rád sahání na pacičky a na ouška.</string>
+    <string name="cat_description_stella">Jsem Stella. Jsem tady nejstarší kočička. Narodila jsem se roku 2007 a jsem princezna. Mám ráda česání a ráda pózuji fotografům. Miluji voňavá místa. Kočárky, kabáty, tašky.\nNejradši lehávám na stolech, a když zrovna odpočívám, je mi všechno jedno. Když jsem spokojená, mlaskám.</string>
+    <string name="cat_description_minnie">Jsem tady teď druhá nejmladší kočička. Zachránili mě ze staveniště, kde jsem přežívala v díře v zemi. Jsem celkem samotářka, ale mám ráda drbání na bříšku. Miluju kapsičky a o jídlo si umím říct. Jsem dobrá vyděračka.\nOd Noxe mě poznáte podle toho, že mám méně bílých chloupků na hrudníku a jinou barvu očí.</string>
+    <string name="cat_description_noxik">Jsem Nox. Jsem první kocourek, kterého adoptovali. Jsem velký mazel a nenasyta. Už dvakrát jsem měl problémy s bříškem, protože zblajznu na co přijdu.\nJsem moc trpělivý a mám stále dobrou náladu. Mám rád jemné hlazení tlapiček.</string>
+    <string name="cat_description_oliver">Jmenuji se Oliver. Jsem kříženec s egyptskou kočkou. Od Muffina mě poznáte podle protáhlejší hlavy a mandlových očí.\nMoc rád si hraju. Nemám rád, když mě někdo zvedá, ale často lezu hostům na ramena a za krk, kde vydržím hodiny. Mám taky moc rád tašky a batohy.</string>
+    <string name="cat_description_muffin">Jsem Muffínek, říkají mi tady Forest Gump. Říkají mi tak s láskou. Než něco vymyslím, chvíli mi to zabere, ale jsem opravdu přemýšlivý.\nNěkdy se posadím, zahledím se (říkají, že mám kulaté oči) a pak řeknu něco opravdu důležitého. Narodil jsem se bez polštářků na zadní nožce, ale vůbec mi to nevadí.</string>
+    <string name="cat_description_terinka">Nejsem tlustá! Jenom macatá… A mám na to nárok. Měla jsem 2x koťátka. Výřez, který mám na oušku, není zranění. Je to značka odchytové služby, která znamená, že jsem kastrovaná. Ráda odpočívám na gauči a na okně. Jsem velký mazel a umím skvělé masáže břicha. Našli mě studenti historie, kteří mi dali jméno Marie Terezie.</string>
+    <string name="cat_description_grace_kelly">Zvědavá a ukecaná, hravá, drzá provokatérka. Zároveň ale roztomilá, s výrazem věčného koťátka. Původně jsme ji měli za princeznu, ale brzy jsme odhalili její pravé já. Popadněte jakoukoliv hračku a máte o zábavu postaráno… Jo a pozor na prsty!</string>
+    <string name="cat_description_zrzinka">Byla zachráněna z otřesných podmínek a o očičko přišla kvůli rozsáhlému, neléčenému zánětu. Na druhé vidí částečně. Buďte tedy trpěliví a pokud se chcete pomazlit, přibližujte se pomalu, aby se Vás nelekla. Zrzinka je trochu opatrná, ale mazlí se moc ráda. Také si ráda hraje. Vyberte si ale hračku, kterou spíše dobře uslyší :)</string>
+</resources>

@@ -12,4 +12,10 @@
     <color name="menu_button_pressed">#d15452</color>
     <color name="menu_button_selected">#b13f3d</color>
     <color name="menu_button_focused">#762322</color>
+
+    <!-- Light buttons (ex. toolbar back button) -->
+    <color name="button_light_text_pressed">#b4b4b4</color>
+    <color name="button_light_text_focused">#ffd0d0</color>
+    <color name="button_light_text_selected">#d9bbbb</color>
+    <color name="button_light_text_default">#ffffff</color>
 </resources>

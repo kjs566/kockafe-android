@@ -23,7 +23,7 @@
     </style>
 
     <style name="BackButton" parent="Widget.AppCompat.Button.Borderless">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@drawable/back_color</item>
         <item name="android:background">@color/transparent</item>
     </style>
 

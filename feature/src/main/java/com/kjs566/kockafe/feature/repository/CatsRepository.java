@@ -16,10 +16,12 @@ public class CatsRepository {
     private static final String OLIVER_ID = "oliver";
     private static final String MUFFIN_ID = "muffin";
     private static final String TERINKA_ID = "terinka";
+    private static final String GRACE_KELLY_ID = "grace_kelly";
+    private static final String ZRZINKA_ID = "zrzinka";
 
-    private static final String[] CATS_IDS = {BOREK_ID, STELLA_ID, MINNIE_ID, NOXIK_ID, OLIVER_ID, MUFFIN_ID, TERINKA_ID};
-    private static final int[] CATS_NAMES = {R.string.cat_name_borek, R.string.cat_name_stella, R.string.cat_name_minnie, R.string.cat_name_noxik, R.string.cat_name_oliver, R.string.cat_name_muffin, R.string.cat_name_terinka};
-    private static final int[] CATS_DESCRIPTIONS = {R.string.cat_description_borek, R.string.cat_description_stella, R.string.cat_description_minnie, R.string.cat_description_noxik, R.string.cat_description_oliver, R.string.cat_description_muffin, R.string.cat_description_terinka};
+    private static final String[] CATS_IDS = {BOREK_ID, STELLA_ID, MINNIE_ID, NOXIK_ID, OLIVER_ID, MUFFIN_ID, TERINKA_ID, GRACE_KELLY_ID, ZRZINKA_ID};
+    private static final int[] CATS_NAMES = {R.string.cat_name_borek, R.string.cat_name_stella, R.string.cat_name_minnie, R.string.cat_name_noxik, R.string.cat_name_oliver, R.string.cat_name_muffin, R.string.cat_name_terinka, R.string.cat_name_grace_kelly, R.string.cat_name_zrzinka};
+    private static final int[] CATS_DESCRIPTIONS = {R.string.cat_description_borek, R.string.cat_description_stella, R.string.cat_description_minnie, R.string.cat_description_noxik, R.string.cat_description_oliver, R.string.cat_description_muffin, R.string.cat_description_terinka, R.string.cat_description_grace_kelly, R.string.cat_description_zrzinka};
     private static final int[][] CATS_IMAGES = {
             {
                 R.drawable.borek00, R.drawable.borek01, R.drawable.borek02, R.drawable.borek03, R.drawable.borek04
@@ -35,6 +37,10 @@ public class CatsRepository {
                 R.drawable.mufi00, R.drawable.mufi01, R.drawable.mufi02, R.drawable.mufi03, R.drawable.mufi04
             }, {
                 R.drawable.teri00, R.drawable.teri01, R.drawable.teri02, R.drawable.teri03
+            },{
+                R.drawable.grace_kelly00, R.drawable.grace_kelly01, R.drawable.grace_kelly02, R.drawable.grace_kelly03, R.drawable.grace_kelly04
+            },{
+                R.drawable.zrzinka00, R.drawable.zrzinka01, R.drawable.zrzinka02
             }
     };
 

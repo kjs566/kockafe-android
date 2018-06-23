@@ -49,7 +49,7 @@ public class ContactActivity extends BaseActivity implements OnMapReadyCallback,
 
         LatLng markerPosition = new LatLng(50.082779, 14.453231);
         mMap.addMarker(new MarkerOptions().position(markerPosition).title(getString(R.string.cat_cafe_map_marker)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(markerPosition));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(markerPosition, 15.0f));
     }
 
     @Override

@@ -1,0 +1,3 @@
+[submodule "imagegallery"]
+	path = imagegallery
+	url = https://github.com/kjs566/image-gallery-android-library.git
