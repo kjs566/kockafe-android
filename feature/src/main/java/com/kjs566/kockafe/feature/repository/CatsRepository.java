@@ -10,7 +10,6 @@ import java.util.Map;
 
 public class CatsRepository {
     private static final String BOREK_ID = "borek";
-    private static final String STELLA_ID = "stella";
     private static final String MINNIE_ID = "minnie";
     private static final String NOXIK_ID = "noxik";
     private static final String OLIVER_ID = "oliver";
@@ -19,14 +18,12 @@ public class CatsRepository {
     private static final String GRACE_KELLY_ID = "grace_kelly";
     private static final String ZRZINKA_ID = "zrzinka";
 
-    private static final String[] CATS_IDS = {BOREK_ID, STELLA_ID, MINNIE_ID, NOXIK_ID, OLIVER_ID, MUFFIN_ID, TERINKA_ID, GRACE_KELLY_ID, ZRZINKA_ID};
-    private static final int[] CATS_NAMES = {R.string.cat_name_borek, R.string.cat_name_stella, R.string.cat_name_minnie, R.string.cat_name_noxik, R.string.cat_name_oliver, R.string.cat_name_muffin, R.string.cat_name_terinka, R.string.cat_name_grace_kelly, R.string.cat_name_zrzinka};
-    private static final int[] CATS_DESCRIPTIONS = {R.string.cat_description_borek, R.string.cat_description_stella, R.string.cat_description_minnie, R.string.cat_description_noxik, R.string.cat_description_oliver, R.string.cat_description_muffin, R.string.cat_description_terinka, R.string.cat_description_grace_kelly, R.string.cat_description_zrzinka};
+    private static final String[] CATS_IDS = {BOREK_ID, MINNIE_ID, NOXIK_ID, OLIVER_ID, MUFFIN_ID, TERINKA_ID, GRACE_KELLY_ID, ZRZINKA_ID};
+    private static final int[] CATS_NAMES = {R.string.cat_name_borek, R.string.cat_name_minnie, R.string.cat_name_noxik, R.string.cat_name_oliver, R.string.cat_name_muffin, R.string.cat_name_terinka, R.string.cat_name_grace_kelly, R.string.cat_name_zrzinka};
+    private static final int[] CATS_DESCRIPTIONS = {R.string.cat_description_borek, R.string.cat_description_minnie, R.string.cat_description_noxik, R.string.cat_description_oliver, R.string.cat_description_muffin, R.string.cat_description_terinka, R.string.cat_description_grace_kelly, R.string.cat_description_zrzinka};
     private static final int[][] CATS_IMAGES = {
             {
                 R.drawable.borek00, R.drawable.borek01, R.drawable.borek02, R.drawable.borek03, R.drawable.borek04
-            }, {
-                R.drawable.stella00, R.drawable.stella01, R.drawable.stella02
             }, {
                 R.drawable.minnie00, R.drawable.minnie01, R.drawable.minnie02
             }, {

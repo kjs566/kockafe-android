@@ -85,10 +85,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 Uri imageUri = IGImagePicker.getImageUriFromResult(this, resultCode, data);
 
                 RequestOptions options = new RequestOptions()
-                        .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
                         .transform(mWatermarkTransformation);
 
-                Glide.with(this).asBitmap().apply(options).into(new SimpleTarget<Bitmap>(){
+                Glide.with(this).asBitmap().apply(options).load(imageUri).into(new SimpleTarget<Bitmap>(1440, 2560){
                     @Override
                     public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
                         if(mImageSharing == null){
