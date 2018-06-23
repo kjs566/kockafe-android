@@ -1,5 +1,6 @@
 package com.kjs566.kockafe.feature.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -40,8 +41,11 @@ public class CatDetailActivity extends BaseActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.btn_gallery){
-            //Toast.makeText(this, "Screen not implemented yet :(", Toast.LENGTH_SHORT).show();
-            IGDetailActivity.startActivity(this, mCatRecord.getImagesRes());
+            Intent intent = new IGDetailActivity.IntentBuilder()
+                    .withImageResources(mCatRecord.getImagesRes())
+                    .withSharingWatermark(R.mipmap.ic_launcher)
+                    .build(this);
+            startActivity(intent);
         }
     }
 }

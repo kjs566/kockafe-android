@@ -1,18 +1,29 @@
 package com.kjs566.kockafe.feature.ui;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.target.Target;
+import com.bumptech.glide.request.transition.Transition;
 import com.kjs566.imagegallery.IGImageSharing;
+import com.kjs566.imagegallery.IGWatermarkTransformation;
 import com.kjs566.kockafe.base.BaseActivity;
 import com.kjs566.imagegallery.IGImagePicker;
 import com.kjs566.kockafe.feature.R;
 
 public class HomeActivity extends BaseActivity implements View.OnClickListener {
     private static final int IMAGE_PICKER_REQUEST_ID = 31234;
+    private IGImageSharing mImageSharing;
+    private IGWatermarkTransformation mWatermarkTransformation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +43,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         for (int id : buttonsIds) {
             findViewById(id).setOnClickListener(this);
         }
+
+        mWatermarkTransformation = new IGWatermarkTransformation(this, R.mipmap.ic_launcher);
     }
 
     @Override
@@ -70,9 +83,21 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         switch(requestCode) {
             case IMAGE_PICKER_REQUEST_ID:
                 Uri imageUri = IGImagePicker.getImageUriFromResult(this, resultCode, data);
-                if(imageUri != null) {
-                    IGImageSharing.with(this).shareImageUri(imageUri);
-                }
+
+                RequestOptions options = new RequestOptions()
+                        .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
+                        .transform(mWatermarkTransformation);
+
+                Glide.with(this).asBitmap().apply(options).into(new SimpleTarget<Bitmap>(){
+                    @Override
+                    public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+                        if(mImageSharing == null){
+                            mImageSharing = new IGImageSharing(HomeActivity.this);
+                        }
+                        mImageSharing.saveAndShareImage(resource);
+                    }
+                });
+
                 break;
             default:
                 super.onActivityResult(requestCode, resultCode, data);
