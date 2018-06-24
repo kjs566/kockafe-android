@@ -7,14 +7,15 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.target.Target;
 import com.bumptech.glide.request.transition.Transition;
 import com.kjs566.imagegallery.IGImageSharing;
+import com.kjs566.imagegallery.IGSaveBitmapAsyncTask;
 import com.kjs566.imagegallery.IGWatermarkTransformation;
 import com.kjs566.kockafe.base.BaseActivity;
 import com.kjs566.imagegallery.IGImagePicker;
@@ -24,6 +25,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     private static final int IMAGE_PICKER_REQUEST_ID = 31234;
     private IGImageSharing mImageSharing;
     private IGWatermarkTransformation mWatermarkTransformation;
+    private ProgressBar mLoadingIndicator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
             findViewById(id).setOnClickListener(this);
         }
 
+        mLoadingIndicator = findViewById(R.id.pb_loading);
         mWatermarkTransformation = new IGWatermarkTransformation(this, R.mipmap.ic_launcher);
     }
 
@@ -82,7 +85,13 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch(requestCode) {
             case IMAGE_PICKER_REQUEST_ID:
+                showLoadingIndicator();
                 Uri imageUri = IGImagePicker.getImageUriFromResult(this, resultCode, data);
+
+                if(imageUri == null){
+                    hideLoadingIndicator();
+                    return;
+                }
 
                 RequestOptions options = new RequestOptions()
                         .transform(mWatermarkTransformation);
@@ -93,7 +102,19 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                         if(mImageSharing == null){
                             mImageSharing = new IGImageSharing(HomeActivity.this);
                         }
-                        mImageSharing.saveAndShareImage(resource);
+                        mImageSharing.saveImage(resource, new IGSaveBitmapAsyncTask.OnImageSavedListener() {
+                            @Override
+                            public void onImageSaved(Uri uri) {
+                                mImageSharing.shareImageUri(uri);
+                                hideLoadingIndicator();
+                            }
+
+                            @Override
+                            public void onImageSavingFailed() {
+                                hideLoadingIndicator();
+                                Toast.makeText(HomeActivity.this, "Couldn't save image for sharing, please check you storage space and try again.", Toast.LENGTH_LONG).show();
+                            }
+                        });
                     }
                 });
 
@@ -102,5 +123,13 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 super.onActivityResult(requestCode, resultCode, data);
                 break;
         }
+    }
+
+    public void showLoadingIndicator(){
+        mLoadingIndicator.setVisibility(View.VISIBLE);
+    }
+
+    public void hideLoadingIndicator(){
+        mLoadingIndicator.setVisibility(View.GONE);
     }
 }

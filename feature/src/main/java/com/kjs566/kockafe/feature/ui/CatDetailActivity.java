@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.kjs566.imagegallery.ui.IGDetailActivity;
 import com.kjs566.kockafe.base.BaseActivity;
@@ -30,7 +29,7 @@ public class CatDetailActivity extends BaseActivity implements View.OnClickListe
 
         mCatRecord = CatsRepository.getInstance().getCatById(catId);
         setTitle(mCatRecord.getNameRes());
-        setBackgroundImage(mCatRecord.getImagesRes()[0]);
+        setBackgroundImage(mCatRecord.getDetailBackgroundRes());
 
         TextView descriptionTextView = findViewById(R.id.tv_cat_description);
         descriptionTextView.setText(mCatRecord.getDescriptionRes());
@@ -42,7 +41,7 @@ public class CatDetailActivity extends BaseActivity implements View.OnClickListe
     public void onClick(View view) {
         if(view.getId() == R.id.btn_gallery){
             Intent intent = new IGDetailActivity.IntentBuilder()
-                    .withImageResources(mCatRecord.getImagesRes())
+                    .withImageUris(mCatRecord.getImageUris())
                     .withSharingWatermark(R.mipmap.ic_launcher)
                     .build(this);
             startActivity(intent);

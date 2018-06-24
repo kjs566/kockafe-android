@@ -7,13 +7,15 @@ public class CatRecord {
     private String id;
     private @StringRes int nameRes;
     private @StringRes int descriptionRes;
-    private @DrawableRes int[] imagesRes;
+    private String[] imageUris;
+    private @DrawableRes int detailBackgroundRes;
 
-    public CatRecord(String id, @StringRes int nameRes, @StringRes int descriptionRes, @DrawableRes int... imagesRes){
+    public CatRecord(String id, @StringRes int nameRes, @StringRes int descriptionRes, @DrawableRes int detailBackgroundRes, String... imageUris){
         this.id = id;
         this.nameRes = nameRes;
         this.descriptionRes = descriptionRes;
-        this.imagesRes = imagesRes;
+        this.imageUris = imageUris;
+        this.detailBackgroundRes = detailBackgroundRes;
     }
 
     public String getId() {
@@ -28,7 +30,11 @@ public class CatRecord {
         return descriptionRes;
     }
 
-    public int[] getImagesRes() {
-        return imagesRes;
+    public String[] getImageUris() {
+        return imageUris;
+    }
+
+    public int getDetailBackgroundRes() {
+        return detailBackgroundRes;
     }
 }

@@ -76,7 +76,7 @@ public class CatsActivity extends BaseActivity {
         @Override
         public void onBindViewHolder(CatViewHolder holder, int position) {
             final CatRecord cat = mCatsList.get(position);
-            holder.updateView(cat.getId(), cat.getNameRes(), cat.getImagesRes()[0]);
+            holder.updateView(cat.getId(), cat.getNameRes(), cat.getDetailBackgroundRes());
         }
 
         @Override
