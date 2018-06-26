@@ -42,7 +42,7 @@ public class CatDetailActivity extends BaseActivity implements View.OnClickListe
         if(view.getId() == R.id.btn_gallery){
             Intent intent = new IGDetailActivity.IntentBuilder()
                     .withImageUris(mCatRecord.getImageUris())
-                    .withSharingWatermark(R.mipmap.ic_launcher)
+                    .withSharingWatermark(R.drawable.watermark)
                     .build(this);
             startActivity(intent);
         }

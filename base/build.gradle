@@ -23,4 +23,5 @@ dependencies {
     api 'com.google.android.gms:play-services-maps:15.0.1'
     application project(':app')
     feature project(':feature')
+    implementation project(':imagegallery')
 }

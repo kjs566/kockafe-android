@@ -12,14 +12,14 @@
 
     <application android:theme="@style/AppTheme">
         <activity android:name=".ui.HomeActivity">
-            <intent-filter android:order="1">
+            <intent-filter android:order="1" android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data
-                    android:host="kjs566.com/kockafe"
+                    android:host="www.kjs566.com/kockafe"
                     android:pathPattern="/home"
                     android:scheme="https" />
             </intent-filter>
@@ -37,13 +37,37 @@
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data
-                    android:host="kjs566.com/kockafe"
+                    android:host="www.kjs566.com/kockafe"
                     android:pathPattern="/about"
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ContactActivity" />
-        <activity android:name=".ui.CatsActivity" />
+        <activity android:name=".ui.ContactActivity">
+            <intent-filter android:order="2">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.kjs566.com/kockafe"
+                    android:pathPattern="/contact"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.CatsActivity">
+            <intent-filter android:order="2">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.kjs566.com/kockafe"
+                    android:pathPattern="/cats"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ui.CatDetailActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

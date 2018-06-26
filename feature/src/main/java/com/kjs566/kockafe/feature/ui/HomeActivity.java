@@ -47,7 +47,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         }
 
         mLoadingIndicator = findViewById(R.id.pb_loading);
-        mWatermarkTransformation = new IGWatermarkTransformation(this, R.mipmap.ic_launcher);
+        mWatermarkTransformation = new IGWatermarkTransformation(this, R.drawable.watermark);
     }
 
     @Override
